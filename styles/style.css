@@ -1,0 +1,17 @@
+body{
+   height: 100vh;
+}
+
+
+.left_side {
+	background-image: url('../images/ecommerce.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.right_side{
+	background: white;
+	right: 0;
+}
