@@ -13,5 +13,20 @@ body{
 
 .right_side{
 	background: white;
-	right: 0;
+	height: 100vh;
+}
+
+.welcome_center{
+	text-align: center;
+	top: 50%;
+	padding: 90px 50px 50px 50px;
+}
+
+.center-form{
+	padding: 20px 50px 50px 50px;
+}
+
+.center{
+	display: table;
+	margin: 0 auto;
 }
