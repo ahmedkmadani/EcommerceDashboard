@@ -1,6 +1,6 @@
 body{
    height: 100vh;
-   background: #fafafa;
+   background: rgb(204, 204, 204);
 }
 
 
@@ -27,7 +27,7 @@ a, a:hover a:focus {
 }
 
 .right_side{
-	background: white;
+	background: rgb(204, 204, 204);
 	height: 100vh;
 }
 
@@ -44,10 +44,6 @@ a, a:hover a:focus {
 .center{
 	display: table;
 	margin: 0 auto;
-}
-
-body {
-     background: #fafafa;
 }
 
 p {
