@@ -1,6 +1,6 @@
 body{
    height: 100vh;
-   background: rgb(204, 204, 204);
+   background: white;
 }
 
 
@@ -27,7 +27,7 @@ a, a:hover a:focus {
 }
 
 .right_side{
-	background: rgb(204, 204, 204);
+	background: white;
 	height: 100vh;
 }
 
