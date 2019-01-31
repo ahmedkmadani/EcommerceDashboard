@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<title>News Page</title>
+</head>
+<body>
+
+
+
+<div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Ecommerce Dashboard</h3>
+            </div>
+           <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
+                </li>
+                <li>
+                    <a href="order_list.html"><i class="material-icons fit">event_note</i>ORDER LIST</a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="material-icons fit">store</i>PRODUCT</a>
+                </li>
+                <li>
+                    <a href="category.html"><i class="material-icons fit">dns</i>CATEGORY</a>
+                </li>
+                <li class="active">
+                    <a href="news.html"><i class="material-icons fit">subject</i>NEWS INFO</a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons fit">adb</i>APP</a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons fit">notifications</i>NOTIFICATION</a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons fit">settings</i>SETTING</a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons fit">error</i>ABOUT </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Link to Website</a>
+                </li>
+            </ul>
+        </nav>
+
+	     <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                   <!--  <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                        <svg class="svg-inline--fa fa-align-justify fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="align-justify" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V44c0-8.837 7.163-16 16-16h416c8.837 0 16 7.163 16 16v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16zm16 144h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 256h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0-128h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                    </button> -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                            	<button class="btn btn-outline-primary nav-link">Add News</button>
+                                 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- cards view for products  -->
+            <div class="card">
+            	<div class="card-body">
+            		<table class="table table-hover">
+                        <thead>
+                            <th scope="col">NO</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Unique Women's Accessories Trend that Will Popular ...</td>
+                                <td>PUBLISHED</td>
+                                <td>NORMAL</td>
+                                <td>08 Feb 17</td>
+                              <td><button class="no-border"><i class="material-icons down">more_vert</i></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>We Join Smartphone Fair in Washington, D.C. April ...</td>
+                                <td>PUBLISHED</td>
+                                <td>NORMAL</td>
+                                <td>08 Feb 17</td>
+                                <td><button class="no-border"><i class="material-icons down">more_vert</i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            	</div>
+            </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" >
+	$(document).ready(function (){
+		$('#sidebarCollapse').on('click', function(){
+			$('#sidebar').toggleClass('active');
+			$(this).toggleClass('active');
+		});
+	});
+</script>
+</html>
