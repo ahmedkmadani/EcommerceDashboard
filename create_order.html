@@ -82,46 +82,61 @@
             </nav>
             
             <!-- cards view for oder list to view order from customers -->
-            <div class="card">
-            	<div class="card-body">
-                    <form>
+        <div class="card">
+            <div class="card-body">
+                <form>
                     <div class="container">
                         <div class="row">
-                            <div class="group" >
-                                <p><input type="input" name="buyer_name"></p>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                 <label>Buyer Name *</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="group" >
-                                <p><input type="input" name="phone_number"></p>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                 <label>Phone Number *</label>
-                            </div>
-                            <div class="col-3">
-                            <div class="group">
-                                <p><input type="input" name="Email"></p>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                 <label>Email *</label>
-                             </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="group" >
-                                <p><input type="input" name="address"></p>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                 <label>Address *</label>
-                            </div>
+                            <div class="col-6">
+                               <div class="mdc-text-field mdc-text-field--fullwidth">
+                               <input type="text" name="buyer_name" class="mdc-text-field__input" placeholder="Buyer Name *"  aria-label="Full-Width Text Field"/>
+                           </div>
                         </div>
                     </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="mdc-text-field mdc-text-field--fullwidth">
+                                   <input type="text" name="phone_number" class="mdc-text-field__input" placeholder="Phone Number *"  aria-label="Full-Width Text Field"/>
+                               </div>
+                           </div>
+                        <div class="col-3">
+                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                               <input type="text" name="email" class="mdc-text-field__input" placeholder="Email *" />
+                           </div>
+                        </div>
+                     </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mdc-text-field mdc-text-field--fullwidth">
+                                   <input type="text" name="address" class="mdc-text-field__input" placeholder="Address *"  aria-label="Full-Width Text Field"/>
+                                   <label class="mdc-floating-label">Address</label>
+                               </div>
+                            </div>
+                        </div>
+                            <div class="row">
+                                    <div class="col-6">
+                                <div class="mdc-select">
+                                    <i class="mdc-select__dropdown-icon"></i>
+                                        <select class="mdc-select__native-control">
+                                            <option value="vegetables">
+                                                        Vegetables
+                                                     </option>
+                                             <option value="fruit">
+                                                        Fruit
+                                                    </option>
+                                                <option value="dairy" selected>
+                                                         Milk, Yogurt, and Cheese
+                                                </option>
+                                         </select>
+                                         <label class="mdc-floating-label mdc-floating-label--float-above">Pick a Food Group</label>
+                                 <div class="mdc-line-ripple"></div>
+                                 </div>
+                            </div>
+                         </div>
+                    </div>
                 </form>
-            	</div>
             </div>
+        </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
