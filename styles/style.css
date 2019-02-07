@@ -216,13 +216,22 @@ a.article, a.article:hover {
 }
 
 
+.nav-button{
+    background: transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none; 
+    display: block;
+    padding: .5rem 1rem;
+}
 
 .no-border{
     background: transparent;
     border: none;
     cursor:pointer;
     overflow: hidden;
-    outline:none;
+    outline:none; 
 }
 
 .material-icons.fit { 
