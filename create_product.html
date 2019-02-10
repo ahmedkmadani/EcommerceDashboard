@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	<title>Order List Page</title>
+	<title>Create Product Page</title>
 </head>
 <body>
 
@@ -87,42 +87,22 @@
                       <form>
                         <div class="row">
                           <div class="col-6 form-group">
-                            <input type="text" class="form-control" name="buyer_name" placeholder="Buyer Name *">
+                            <input type="text" class="form-control" name="buyer_name" placeholder="Product Name *">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone *">
+                            <input type="text" class="form-control" name="phone" placeholder="Price *">
                           </div>
                           <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="email" placeholder="Email *">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <input type="text" class="form-control" name="address" placeholder="Address *">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3">
-                            <label></label>
-                              <select class="custom-select">
-                                <option selected>Shipping...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                          </div>
-                          <div class="col-3">
-                            <label></label>
-                              <input class="form-control" type="date" name="date"/>
+                            <input type="text" class="form-control" name="email" placeholder="Stock *">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-3 form-group">
                             <label></label>
                               <select class="custom-select">
-                                <option selected>Order Status...</option>
+                                <option selected>Product Status...</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -135,32 +115,6 @@
                           </div>
                         </div>
                       </form>
-
-                      <div class="row">
-                        <div class="col-12">
-                        <h5>List Product Order :</h5>
-                        <table class="table table-hover">
-                        <thead>
-                            <th scope="col">NO</th>
-                            <th scope="col">Product</th>
-                            <th scope="col">Price Item</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Price Total</th>
-                            <th scope="col">Action</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Ahmed Kamal Madani</td>
-                                <td>SG93166MF</td>
-                                <td>28 Jan 19</td>
-                                <td>28 Jan 19</td>
-                               <td><button class="no-border"><i class="material-icons down">more_vert</i></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                      </div>
-                  </div>
             </div>
         </div>
       </div>
