@@ -81,7 +81,7 @@
                               </form>
                             </li>
                              <li class="nav-item">
-                               <button class="btn btn-outline-success">SEND</button>
+                               <button class="btn btn-outline-success" class="btn btn-primary" data-toggle="modal" data-target="#notifactionModal" data-whatever="@getbootstrap">SEND</button>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-button"><i class="material-icons down">more_vert</i></button>
@@ -90,6 +90,37 @@
                     </div>
                 </div>
             </nav>
+
+<div class="modal fade" id="notifactionModal" data-drop="false" tabindex="-1" role="dialog" aria-labelledby="notifactionModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="notifactionModalLabel">Send Notification</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Notification Title :</label>
+            <input type="text" class="form-control" id="notifaction-title">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Notification Content :</label>
+            <input type="text" class="form-control" id="notification-content"></input>
+          </div>
+        </form>
+         <span>This data will be displayed on the user's phone notification</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send </button>
+      </div>
+    </div>
+  </div>
+</div>
+
             <!-- cards view for notifaction  -->
         <div id="card_content">
             <div class="card">
@@ -131,5 +162,13 @@
 			$(this).toggleClass('active');
 		});
 	});
+
+  $('#notifactionModal').parent().on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) 
+  var notifaction-title = button.data('whatever')
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + notifaction-title)
+  modal.find('.modal-body input').val(notifaction-title)
+})
 </script>
 </html>
