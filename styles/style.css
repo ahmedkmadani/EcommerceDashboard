@@ -242,6 +242,10 @@ a.article, a.article:hover {
     box-sizing: content-box;
 }
 
+.card-text {
+    word-wrap: break-word;
+}
+
 #sidebarCollapse span:first-of-type {
     transform: rotate(45deg) translate(2px, 2px);
 }
