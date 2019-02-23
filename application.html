@@ -81,7 +81,7 @@
                               </form>
                             </li>
                             <li class="nav-item">
-                               <button class="btn btn-outline-success">ADD VERSION</button>
+                               <button data-toggle="modal" data-target="#addVersionModal" data-whatever="@getbootstrap" class="btn btn-outline-success">ADD VERSION</button>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-button"><i class="material-icons down">more_vert</i></button>
@@ -90,6 +90,78 @@
                     </div>
                 </div>
             </nav>
+
+<div class="modal fade" id="addVersionModal" data-drop="false" tabindex="-1" role="dialog" aria-labelledby="addVersionModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addVersionModal">Add Version</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Version Code :</label>
+            <input type="text" class="form-control" id="notifaction-title">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Version Name :</label>
+            <input type="text" class="form-control" id="notification-content"></input>
+          </div>
+             <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                  <label class="form-check-label" for="disabledFieldsetCheck">
+                    Active
+                  </label>
+                </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="editVersionModal" data-drop="false" tabindex="-1" role="dialog" aria-labelledby="editVersionModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editVersionModal">Edit Version</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <span>Be careful when you set inactive or delete app version, set inactive or delete will cause forcing user with version N to update their app. Make sure your newest app version already available at google play.</span>
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Version Code :</label>
+            <input type="text" class="form-control" id="notifaction-title">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Version Name :</label>
+            <input type="text" class="form-control" id="notification-content"></input>
+          </div>
+             <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                  <label class="form-check-label" for="disabledFieldsetCheck">
+                    Active
+                  </label>
+                </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send </button>
+      </div>
+    </div>
+  </div>
+</div>
 
             <!-- cards view for application  -->
          <div id="card_content">
@@ -111,7 +183,7 @@
                                 <td>2</td>
                                 <td>Active</td>
                                 <td>08 Feb 17</td>
-                              <td><button class="no-border"><i class="material-icons down">edit</i></button></td>
+                              <td><button data-toggle="modal" data-target="#editVersionModal" data-whatever="@getbootstrap" class="no-border"><i class="material-icons down">edit</i></button></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -119,7 +191,7 @@
                                 <td>1</td>
                                 <td>Active</td>
                                 <td>08 Feb 17</td>
-                                <td><button class="no-border"><i class="material-icons down">edit</i></button></td>
+                                <td><button data-toggle="modal" data-target="#editVersionModal" data-whatever="@getbootstrap" class="no-border"><i class="material-icons down">edit</i></button></td>
                             </tr>
                         </tbody>
                     </table>

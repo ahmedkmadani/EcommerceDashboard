@@ -122,11 +122,11 @@
 </div>
 
 
-<div class="modal fade" id="notifactionDevSend" data-drop="false" tabindex="-1" role="dialog" aria-labelledby="notifactionModalLabel" aria-hidden="true">
+<div class="modal fade" id="notifactionDevSend" data-drop="false" tabindex="-1" role="dialog" aria-labelledby="notifactionDevSend" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="notifactionModalLabel">Send Notification to : Device Name</h5>
+        <h5 class="modal-title" id="notifactionDevSend">Send Notification to : Device Name</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -197,14 +197,5 @@
 			$(this).toggleClass('active');
 		});
   });
-
-  $('#notifactionModal').parent().on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) ;
-  var notifaction-title = button.data('whatever');
-  var modal = $(this);
-  modal.find('.modal-title').text('New message to ' + notifaction-title);
-  modal.find('.modal-body input').val(notifaction-title);
-});
- 
 </script>
 </html>
